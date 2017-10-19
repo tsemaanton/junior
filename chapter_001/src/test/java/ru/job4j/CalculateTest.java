@@ -1,30 +1,25 @@
 package ru.job4j;
-
-import org.junit.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
-....*Test add.
-....*
-....*@author Anton Tsema (alsinghspb@gmail.com)
-....*@version $Id$
-....*@since 0.1
-.*/
+ ....*Test add.
+ ....*
+ ....*@author Anton Tsema (alsinghspb@gmail.com)
+ ....*@version 0.1
+ ....*@since 19.10.2017
+ .*/
 
-public class CalculateTest {
-	
-/**
-....* Test add.
-....*/
-
-    public void whenTakeNameThenTreeEchoPlusName() {
-	     String input = "Anton Tsema";
-		 String expect = "Echo,Echo,Echo : Anton Tsema";
-		 Calculate calc = new Calculate();
-		 String result = calc.echo(input);
-		 assertThat(result,is(expect));
-    }	
-}			
+public class CalculatorTest {
+	/**
+	*Method whenAddOnePlusOneThenTwo.
+	*/
+@Test
+    public void whenAddOnePlusOneThenTwo() {
+        Calculator calc = new Calculator();
+        calc.add(1D, 1D);
+        double result = calc.getResult();
+        double expected = 2D;
+        assertThat(result, is(expected));
+    }
+}

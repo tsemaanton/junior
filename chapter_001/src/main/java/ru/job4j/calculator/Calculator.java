@@ -1,23 +1,51 @@
 package ru.job4j.calculator;
-
+/**
+*class Calculator операции с цислами.
+ *@author tsema anton
+ *@since 18.10.2017
+*/
 public class Calculator {
+/**
+@param result
+*/
 private double result;
-
-public void add (double first, double second){
+/**
+сложение.
+@param  first first
+@param  second second
+*/
+public void add(double first, double second) {
 this.result = first + second;
 }
-
-public void subtract (double first, double second){
+/**
+вычитание.
+@param first first
+@param second second
+*/
+public void subtract(double first, double second) {
 this.result = first - second;
 }
-public void div (double first, double second){
+/**
+деление.
+@param first first
+@param second second
+*/
+public void div(double first, double second) {
 this.result = first / second;
 }
-public void multiple (double first, double second){
+/**
+умножение.
+@param first first
+@param second second
+*/
+public void multiple(double first, double second) {
 this.result = first * second;
 }
-public double getResult(){
+/**
+вынос значения из метода.
+@return result
+*/
+public double getResult() {
 return this.result;
 }
-
 }

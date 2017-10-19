@@ -2,7 +2,7 @@
 * Package for CalculateTest.
 *
 * @author Anton Tsema (mailto:alsinghspb@gmail)
-* @version $Id$
-* @since 0.1
+* @version 0.1
+* @since 19.10.2017
 */
 package ru.job4j;
