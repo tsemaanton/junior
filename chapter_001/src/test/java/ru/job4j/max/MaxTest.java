@@ -1,11 +1,10 @@
 package ru.job4j.max;
 /**
- ....*Test add.
- ....*
- ....*@author Anton Tsema (alsinghspb@gmail.com)
- ....*@version 0.1
- ....*@since 19.10.2017
- .*/
+*Test add.
+*@author Anton Tsema (alsinghspb@gmail.com)
+*@version 0.1
+*@since 19.10.2017
+ */
 
 public class MaxTest {
 /**
@@ -23,7 +22,7 @@ Method whenSecondLessFirst.
 @Test
 public void whenSecondLessFirst() {
     Max maxim = new Max();
-    int result = maxim.max(1, 2);
+    int result = maxim.max(2, 1);
     assertThat(result, is(1));
 }
 /**
