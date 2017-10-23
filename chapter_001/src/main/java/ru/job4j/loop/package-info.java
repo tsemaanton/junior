@@ -1,5 +1,5 @@
 /**
-* Package for Counter.
+* Package for Loop.
 *
 * @author Anton Tsema (mailto:alsinghspb@gmail)
 * @version 0.1
