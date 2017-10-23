@@ -20,14 +20,6 @@ public class Max {
 @return наибольшее
 */
 public int max(int first, int second, int third) {
-	while (max(first, second) > max(second, third)) {
-		return first;
-	}
-	while (max(second, third) > max(first, third)) {
-	return second;
-	}
-	while (max(third, first) > max(third, second)) {
-		return third;
-	}
+	return max(max(first, second), third);
 }
  }
