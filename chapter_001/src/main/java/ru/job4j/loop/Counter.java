@@ -15,12 +15,13 @@ public class Counter {
 	@param finish finish
 	@return result
 	*/
-@Test
     public int add(int start, int finish) {
-		for (int result; start <= finish; start++) {
+		int result = 0;
+		for (; start <= finish; start++) {
 		if (start % 2 == 0) {
-		return result;
+		result += start;
 		    }
 		}
+		return result;
     }
 }

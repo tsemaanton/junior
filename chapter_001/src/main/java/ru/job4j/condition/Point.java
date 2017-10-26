@@ -45,6 +45,6 @@ return this.y;
 @return true false
 */
 public boolean is(int a, int b) {
-if return (y = x * a + b)
+return (y == x * a + b);
 }
 }

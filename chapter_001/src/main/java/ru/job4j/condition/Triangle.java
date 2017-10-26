@@ -34,7 +34,7 @@ public class Triangle {
 * @return расстояние между точками left и right.
 */
 public double distance(Point left, Point right) {
-    return Math.sqrt(Math.pow(left.getX() - right.getx(), 2) + Math.pow(left.getY() - right.getY(), 2));
+    return Math.sqrt(Math.pow(left.getX() - right.getX(), 2) + Math.pow(left.getY() - right.getY(), 2));
 }
 /**
 * Метод вычисления периметра по длинам сторон.
@@ -49,7 +49,7 @@ public double distance(Point left, Point right) {
 * @return Перимент.
 */
 public double period(double ab, double ac, double bc) {
-    return ((ab + ac + dc) / 2);
+    return ((ab + ac + bc) / 2);
 }
 /**
 * Метод должен вычислить прощадь треугольканива.
@@ -69,7 +69,7 @@ public double area() {
     double bc = this.distance(this.b, this.c);
     double p = this.period(ab, ac, bc);
     if (this.exist(ab, ac, bc)) {
-        rst = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
+        rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
 }
     return rsl;
 }
@@ -90,22 +90,11 @@ private boolean exist(double ab, double ac, double bc) {
 				return true;
 				}
 				}
-				} else {
+				}
 	return false;
-	}
 }
 /**
 вернуть координаты X.
 *@return x x
 */
-private int getX() {
-	return this.y;
-}
-/**
-вернуть координаты Y.
-*@return y y
-*/
-private int getY() {
-	return this.y;
-}
 }

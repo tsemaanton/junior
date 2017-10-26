@@ -13,7 +13,7 @@ public class Factorial {
 	@return j
 	*/
 public int calc(int num) {
-int j;
+int j = 0;
 if (num == 0) {
 	j = 1;
 }
