@@ -15,17 +15,15 @@ public class FactorialTest {
 	*/
 	@Test
     public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
-        Factorial testOne = new Factorial();
-		test.one(5);
-		assertThat(j, is(120));
+        Factorial factorial = new Factorial();
+		assertThat(factorial.calc(5), is(120));
     }
 	/**
 	*Method whenCalculateFactorialForZeroThenOne.
 	*/
 	@Test
     public void whenCalculateFactorialForZeroThenOne() {
-		Factorial testOne = new Factorial();
-		test.one(0);
-		assertThat(j, is(1));
+		Factorial factorial = new Factorial();
+		assertThat(factorial.calc(0), is(1));
     }
 }

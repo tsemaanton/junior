@@ -1,7 +1,9 @@
+package ru.job4j.condition;
+import ru.job4j.condition.Point;
+import ru.job4j.condition.Triangle;
 import org.junit.Test;
+import static org.junit.Assert.assertThat;
 import static org.hamcrest.number.IsCloseTo.closeTo;
-import static org.junit.Assert.*;
-
 public class TriangleTest {
  @Test
  public void whenAreaSetThreePointsThenTriangleArea() {
