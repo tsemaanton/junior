@@ -1,11 +1,10 @@
 package ru.job4j.loop;
 
 /**
- * ....*class Board.
- * ....*
- * ....*@author Anton Tsema (alsinghspb@gmail.com)
- * ....*@version 0.1
- * ....*@since 27.10.2017
+ *class Board.
+ *@author Anton Tsema (alsinghspb@gmail.com)
+ *@version 0.1
+ *@since 27.10.2017
  * .
  */
 class Board {
@@ -24,7 +23,8 @@ class Board {
                     builder.append('X');
                 } else {
                     builder.append(" ");
-                } }
+                }
+            }
             builder.append("\r\n");
         }
         return builder.toString();

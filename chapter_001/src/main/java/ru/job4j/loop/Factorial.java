@@ -19,7 +19,7 @@ class Factorial {
 			j = 1;
 		}
 		for (int i = 1; i <= num; ++i) {
-			j *= i ;
+			j *= i;
 		}
 return j;
 	}

@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
  .*/
 public class BoardTest {
 		/**
-	*Method addition.
+	*Method whenPaintBoardWithWidthThreeAndHeightThreeThenStringWithThreeColsAndThreeRows.
 	*/
     @Test
     public void whenPaintBoardWithWidthThreeAndHeightThreeThenStringWithThreeColsAndThreeRows() {
@@ -29,7 +29,7 @@ public class BoardTest {
         Board board = new Board();
         String result = board.paint(4, 5);
         final String line = System.getProperty("line.separator");
-        String expected = String.format("X X X%s X X %sX X X%s X X %s", line, line, line,line);
+        String expected = String.format("X X X%s X X %sX X X%s X X %s", line, line, line, line);
         assertThat(result, is(expected));
     }
 }
