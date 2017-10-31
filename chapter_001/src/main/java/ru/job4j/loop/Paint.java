@@ -1,5 +1,4 @@
 package ru.job4j.loop;
-import javax.xml.ws.soap.MTOM;
 
 /**
 *class Paint.
