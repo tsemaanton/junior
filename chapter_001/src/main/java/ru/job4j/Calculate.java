@@ -6,19 +6,12 @@ package ru.job4j;
  *@since 12.10.2017
  */
 
-public class Calculate {
-	/**
-	 вывод в консоль Hello World!
-	 @param args - args
-	 */
-	public static void main(String[] args) {
-		System.out.print("Hello world!");
-	}
-	/** Method echo.
+class Calculate {
+		/** Method echo.
 	 * @param name Your name.
 	 * @return Echo plus your name.
 	 */
-	public String echo(String name) {
+	 String echo(String name) {
 		return "Echo, echo, echo : " + name;
 	}
 }
