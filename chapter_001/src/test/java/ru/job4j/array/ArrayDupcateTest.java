@@ -18,9 +18,9 @@ public class ArrayDupcateTest {
 @Test
 public void whenRemoveDuplicatesThenArrayWithoutDuplicate() {
     ArrayDuplicate arr = new ArrayDuplicate();
-    String massiv[] = {"Привет","Мир","Привет","Супер","Мир"};
-    String result[] = {"Привет","Мир","Супер"};
-    assertThat(result, is(arr.remove(massiv)));
+    String[] mass = {"Привет", "Мир", "Привет", "Супер", "Мир"};
+    String[] result = {"Привет", "Мир", "Супер"};
+    assertThat(result, is(arr.remove(mass)));
 
     }
 

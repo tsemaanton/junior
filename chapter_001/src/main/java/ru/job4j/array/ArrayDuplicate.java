@@ -18,19 +18,17 @@ class ArrayDuplicate {
      */
      String[] remove(String[] array) {
         int duplicate = array.length;
-    for (int out = 0; out < duplicate ; out++) {
-        for (int in = out + 1; in < duplicate;in++) {
-                if (array[out].equals(array[in])) {
+    for (int out = 0; out < duplicate; out++) {
+        for (int in = out + 1; in < duplicate; in++) {
+            if (array[out].equals(array[in])) {
                     array[in] = array[duplicate - 1];
                     duplicate--;
                     in--;
-                }
-
             }
-
-            }
-
-return Arrays.copyOf(array, duplicate);
         }
     }
+
+return Arrays.copyOf(array, duplicate);
+     }
+}
 
